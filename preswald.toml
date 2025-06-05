@@ -1,0 +1,24 @@
+[project]
+title = "Seattle Weather App"
+version = "0.1.0"
+port = 8501
+slug = "seattle-weather"
+entrypoint = "hello.py" 
+
+[branding]
+name = "Seattle Weather Dashboard"
+logo = "images/seattle-image.jpg"      
+favicon = "images/favicon.ico"      
+primaryColor = "#1E90FF"            
+
+backgroundColor = "#F0F8FF"
+textColor = "#002244"
+
+[data.seattle_weather]
+type = "csv"
+path = "data/seattle-weather.csv"   
+columns = ["date", "precipitation", "temp_max", "temp_min", "wind", "weather"]
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
